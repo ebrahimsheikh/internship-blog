@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/managePosts.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page">
+        <div id="heading">
+            <h1>Posts</h1>
+            <a href="/logout">Logout</a>
+            <button><a href="/post">New Post</a></button>
+            <!-- doesnt seem right to use links instead of a btns  -->
+        </div>
+        <% posts.forEach(post=>{ %>
+
+            <div class="panel">
+                <div>
+                    <h2>
+                        <%=post.title%>
+                    </h2>
+                    <h4><%= dateFormat(post.date, "dddd dd mmmm") %> </h4>
+                </div>
+                <div>
+                    <a href="/edit/<%=post.id%>" id="edit">EDIT</a>
+                    <a href="/delete/<%=post.id%>" id="delete">DELETE</a>
+                </div>
+            </div>
+
+            <%});%>
+    </div>
+</body>
+
+</html>

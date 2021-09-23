@@ -1,0 +1,123 @@
+body {
+    text-align: left;
+}
+
+.page {
+    width: 975px;
+    margin: 60px auto 50px;
+}
+
+.post {
+    background-color: white;
+    height: 365px;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 30px;
+}
+
+img {
+    /* float: left;
+    box-sizing: content-box; */
+    height: 365px;
+    width: 365px;
+    border-radius: 10px;
+}
+
+.post-content {
+    padding: 30px 30px 50px 40px;
+    position: relative;
+}
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+p {
+    color: #1f1f1f;
+    font-weight: lighter;
+}
+
+a {
+    position: absolute;
+    bottom: 45px;
+    text-decoration: none;
+    color: #1e88e5;
+}
+
+/* The Modal (background) */
+
+.modal {
+    text-align: center;
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 50px;
+    /* Location of the box */
+    padding-bottom: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    /* overflow: auto; Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+iframe {
+    width: 75%;
+    height: 100%;
+    border-radius: 10px;
+}

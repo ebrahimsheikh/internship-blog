@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/post.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page">
+        
+        <div class="post">
+            <div><span class="close" onclick="parent.close()">&times;</span></div>
+            <div class="title">
+                <img src="<%=post.img%>" alt="img">
+                <div class="title-text">
+                    <h1><%=post.title%></h1>
+                    <h3><%= dateFormat(post.date, "dddd dd mmmm") %></h3>
+                </div>
+            </div>
+            <div class="post-content">
+                <p><%=post.content%></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

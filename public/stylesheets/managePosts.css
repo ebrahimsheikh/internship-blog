@@ -1,0 +1,62 @@
+.page {
+    width: 900px;
+    margin: 35px auto 50px;
+}
+
+#heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    color: white;
+    padding: 18px 30px;
+    border: none;
+    font-size: 15px;
+    background-color: #1e88e5;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    margin-top: 24px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    margin: 0px 20px;
+    color: white;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #1e88e5;
+    font-weight: lighter;
+    margin: 0px 0px 20px;
+}
+
+#edit {
+    color: #1e88e5;
+}
+
+#delete {
+    color: #e51e1e;
+}
+
+.panel {
+    background-color: white;
+}
+
+a[href="/logout"] {
+    color: #f3f4f4;
+}

@@ -1,0 +1,68 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    width: 850px;
+    padding: 45px 70px 60px;
+}
+
+.title {
+    display: flex;
+    align-items: flex-end;
+}
+
+.title-text {
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h3 {
+    color: #1e88e5;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+img {
+    height: 295px;
+    width: 295px;
+    border-radius: 20px;
+}
+
+p {
+    line-height: 35px;
+}
+
+/* The Close Button */
+
+.close {
+    color: #5c5b5b;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    background-color: #f3f4f4;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
